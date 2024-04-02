@@ -161,6 +161,11 @@ p, h1{
     align-items: center;
 }
 
+.wrapper2 div:hover{
+    border: 3px solid #1795f5;
+    color: #1795f5;
+}
+
 .grid-text{
     display: flex;
     align-items: end;
@@ -286,11 +291,20 @@ p, h1{
     height: 100px;
 }
 
+.marks-grid1, .marks-grid2, .marks-grid3, .marks-grid4, .marks-grid5, .marks-grid6, .marks-grid7, .marks-grid8, .marks-grid9, .marks-grid10, .marks-grid11, .marks-grid12, .marks-grid13, .marks-grid14 {
+    transition: transform 0.3s ease;
+}
+
+.marks-grid1:hover, .marks-grid2:hover, .marks-grid3:hover, .marks-grid4:hover, .marks-grid5:hover, .marks-grid6:hover, .marks-grid7:hover, .marks-grid8:hover, .marks-grid9:hover, .marks-grid10:hover, .marks-grid11:hover, .marks-grid12:hover, .marks-grid13:hover, .marks-grid14:hover {
+    transform: scale(1.05);
+
+}
+
 .form{
     display: flex;
     flex-direction: column;
     margin: 0px 15px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .form-input{
@@ -419,7 +433,18 @@ nav {
     border-radius: 50%;
     margin: 0 5px;
   }
-
+  .footer{
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .footer-link{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 12px;
+  }
 
   @media (max-width: 800px) {
     .hamburger{
