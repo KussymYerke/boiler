@@ -2,6 +2,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 p, h1{
@@ -10,7 +11,7 @@ p, h1{
 .container {
     position: relative;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -105,6 +106,17 @@ p, h1{
     gap: 5px;
 }
 
+.about-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-video{
+    height: 183px;
+    width: 90%;
+    margin-bottom: 20px;
+}
 .about-text{
     width: 90%;
     font-size: 5vw;
@@ -121,7 +133,10 @@ p, h1{
 }
 
 .services{
-    margin: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
 }
 .services-heading{
     text-align: center;
@@ -307,7 +322,11 @@ p, h1{
     margin: 0px 15px;
     padding-top: 20px;
 }
-
+.form-section{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 .form-input{
     padding: 15px 10px;
     border-radius: 5px;
@@ -351,6 +370,11 @@ p, h1{
     margin-top: 5px;
 }
 
+.socials{
+    display: flex;
+    align-items: center;
+}
+
 nav {
     min-height: 90px;
   }
@@ -363,12 +387,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
   }
 
   .nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 50px;
   }
   .nav-branding{
     font-size: 2rem;
@@ -393,6 +424,7 @@ nav {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #085793;
+    margin-right: 50px;
   }
   .nav-link a{
     text-decoration: none;
@@ -494,6 +526,24 @@ nav {
     }
   }
 
+  @media (min-width: 500px){
+    .hero-mobile-bg{
+        display: none;
+    }
+    .hero-bg{
+        display: block;
+        width: 100%;
+        min-height: 110%;
+    }
+    .about-video{
+        height: 250px;
+    }
+    .about{
+        padding-top: 70px;
+    }
+}
+
+
 @media (max-width: 600px) {
     .grid3, .grid4, .grid5{
         grid-column-start: 1;
@@ -523,6 +573,12 @@ nav {
     }
 }
 
+@media (max-width: 768px){
+    .about-video{
+        height: 300px;
+    }
+}
+
 
 
 @media (max-width: 450px) {
@@ -541,5 +597,115 @@ nav {
     .marks-grid1, .marks-grid3, .marks-grid5, .marks-grid7, .marks-grid9, .marks-grid11, .marks-grid13{
         grid-column-start: 1;
         grid-column-end: 7;
+    }
+}
+
+@media (min-width: 768px){
+    .hero-subtitle{
+        margin-bottom: 20px;
+    }
+
+    .hero-btn{
+        padding: 20px;
+        font-size: 24px;
+    }
+    .hero-list{
+        margin-top: 20px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 20px;
+    }
+    .about{
+        flex-direction: row;
+        margin-left: 15px;
+        margin-right: 15px;
+        align-items: start;
+        padding-top: 100px;
+    }
+    .about-video{
+        height: 200px;
+        width: 100%;
+    }
+    .about-right{
+        margin-top: -5px;
+    }
+    .about-text{
+        font-size: 2vw;
+    }
+    .about-subtext{
+        font-size: 1.5vw;
+    }
+    .advantages-title, .marks-title, .form-title, .services-heading{
+        font-size: 5vw;
+    }
+    .marks-title{
+        margin-bottom: 40px;
+    }
+    .wrapper2{
+        margin-bottom: 40px;
+    }
+    .form-title{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .advantages-lists{
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .adv-list{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+    .about{
+        margin-left: 30px;  
+    }
+    .about-right{
+        margin-top: -10px;
+    }
+    .about-video{
+        height: 250px;
+        width: 100%;
+    }
+    .about-text{
+        font-size: 2vw;
+    }
+    .about-subtext{
+        font-size: 1.5vw;
+    }
+    .adv-list{
+        width: 100%;
+    }
+    .adv-logo{
+        width: 96px;
+        height: 96px;
+    }
+    .adv-title{
+        font-size: 16px;
+    }
+    .adv-subtitle{
+        text-align: center;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .advantages-title, .marks-title, .form-title, .services-heading{
+        font-size: 4vw;
+    }
+    .nav-link{
+        font-size: 24px;
+        gap: 100px;
+    }
+}
+
+@media (min-width: 1280px){
+    .advantages-title, .marks-title, .form-title, .services-heading{
+        font-size: 3vw;
     }
 }

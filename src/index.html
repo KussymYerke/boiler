@@ -13,7 +13,7 @@
   <div class="container">
     <header>
         <nav class="navbar">
-            <img class="image" src="./assets/logo.png" alt="">
+            <a href="/"><img class="image" src="./assets/logo.png" alt=""></a>
             <ul class="nav-menu">
                 <!-- <li class="nav-item">
                     <a href="assets/ForbesFile.pdf" target="_blank" class="nav-link">MediaKit</a>
@@ -31,10 +31,10 @@
                     <a href="#form" class="nav-link">Анкета</a>
                 </li> -->
                 <li class="nav-item">
-                    <a href="#team" class="nav-link">Главная</a>
-                    <a href="#team" class="nav-link">О нас</a>
-                    <a href="#team" class="nav-link">Услуги</a>
-                    <a href="#team" class="nav-link">Преимущества</a>
+                    <a href="#home" class="nav-link">Главная</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#services" class="nav-link">Услуги</a>
+                    <a href="#adv" class="nav-link">Преимущества</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -44,7 +44,7 @@
             </div>
         </nav>
     </header>
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="hero-inner">
             <h1 class="hero-title">Эффективный ремонт <br/> газовых котлов <span class="text-main">Алматы</span> </h1>
             <p class="hero-subtitle">Профессиональные услуги по ремонту <br/>
@@ -68,30 +68,32 @@
         <img class="hero-bg" src="./assets/bg.png" alt="">
         <img class="hero-mobile-bg" src="./assets/bg-mobile.png" alt="">
     </div>
-    <div class="about">
-            <iframe height="183" width="90%" src="https://www.youtube.com/embed/FXielIxYejo?si=4w-411KDgkz5r-ut" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p class="about-text">
-                <span class="about-color">Частые поломки</span>. Владельцы газовых 
-                котлов часто разочарованы из-за частых
-                поломок, нарушающих их комфорт и 
-                требующих срочного ремонта.
-            </p>
-            <p class="about-subtext">
-                Представьте, вы просыпаетесь холодным утром, 
-                ожидая теплого душа, но обнаруживаете, что ваш 
-                котел снова вышел из строя, заставляя вас дрожать 
-                и беспокоиться о поиске ремонтной службы среди 
-                своего напряженного графика.
-            </p>
-            <p class="about-subtext">
-                Наша команда квалифицированных технических 
-                специалистов быстро диагностирует и устраняет 
-                любые проблемы вашего котла, обеспечивая 
-                бесперебойное тепло и комфорт для вас и вашей 
-                семьи
-            </p>
+    <div class="about" id="about">
+            <iframe class="about-video" src="https://www.youtube.com/embed/FXielIxYejo?si=4w-411KDgkz5r-ut" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="about-right">
+                <p class="about-text">
+                    <span class="about-color">Частые поломки</span>. Владельцы газовых 
+                    котлов часто разочарованы из-за частых
+                    поломок, нарушающих их комфорт и 
+                    требующих срочного ремонта.
+                </p>
+                <p class="about-subtext">
+                    Представьте, вы просыпаетесь холодным утром, 
+                    ожидая теплого душа, но обнаруживаете, что ваш 
+                    котел снова вышел из строя, заставляя вас дрожать 
+                    и беспокоиться о поиске ремонтной службы среди 
+                    своего напряженного графика.
+                </p>
+                <p class="about-subtext">
+                    Наша команда квалифицированных технических 
+                    специалистов быстро диагностирует и устраняет 
+                    любые проблемы вашего котла, обеспечивая 
+                    бесперебойное тепло и комфорт для вас и вашей 
+                    семьи
+                </p>
+            </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
         <h1 class="services-heading">Список услуг</h1>
         <div class="wrapper">
             <div class="grid1 grid-text">
@@ -109,7 +111,7 @@
                 газового котла</div>
         </div>
     </div>
-    <div class="advantages">
+    <div class="advantages" id="adv">
         <h1 class="advantages-title">Наши преимущества</h1>
         <div class="advantages-lists">
             <div class="adv-list">
@@ -203,7 +205,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="form-section">
         <h1 class="form-title">Хотите, чтобы мы связались с вами?</h1>
         <form method="post" class="form" action="https://script.google.com/macros/s/AKfycbzyd9Dfu3HZx6Fl__PTV5bM-zY39HLmTmZ1FWMZ9WO9Yf6lAqeD8X-wNA5bUbNk9dP7Xw/exec" name="contact-form">
             <input id="name" class="form-input" type="text" name="your-name" placeholder="Ваше ФИО" required>
@@ -227,6 +229,14 @@
             <li>Преимущества</li>
             <li>+7 (705) 576 61 63</li>
         </ul>
+        <div class="socials">
+            <a href="https://www.tiktok.com/@navienservice?_t=8ktcoC9aTPJ&_r=1">
+                <img width="64" src="./assets/tiktok.webp" alt="">
+            </a>
+            <a href="https://www.instagram.com/navien_remont_service?igsh=MWV0em92OWE2emNvdA%3D%3D&utm_source=qr">
+                <img width="96" src="./assets/insta.webp" alt="" />
+            </a>
+        </div>
     </div>
   </div>
 </body>
