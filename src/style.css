@@ -131,6 +131,14 @@ p, h1{
     color: #085793;
     font-weight: bold;
 }
+.footer-l{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-l:hover{
+    color:#085793;
+}
 
 .services{
     margin: 0 auto;
