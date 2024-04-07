@@ -112,6 +112,20 @@ p, h1{
     align-items: center;
 }
 
+.disabled-button {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .about-video{
     height: 183px;
     width: 90%;
@@ -346,8 +360,14 @@ p, h1{
     background: #085793;
     color: white;
     border: none;
+    cursor: pointer;
     padding: 15px 10px;
     border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 250px;
+    font-size: 16px;
 }
 .success{
     font-size: 20px;
@@ -493,6 +513,9 @@ nav {
     .hamburger{
       display: block;
     }
+    .nav-menu{
+        margin-right: 0;
+      }
     .hamburger.active .bar:nth-child(2){
       opacity: 0;
     }
